@@ -1,0 +1,34 @@
+<html>
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <title>Etch-a-Sketch</title>
+    <!--Custom styles-->
+    <link rel= "stylesheet" href = "style.css"/>
+    <!--Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Etch-a-sketch</h1>
+    <div id="sketchBox">
+      
+    </div>
+    <div id="buttonContainer">
+        
+        <input type="color" id="colorPicker" value="#000000">
+        <button type="button"id="colorBtn"  class="btn btn-dark">Color mode</button>
+        <button type="button"id="rainbowBtn"  class="btn btn-dark">Rainbow mode</button>
+        <button type="button"id="eraserBtn" class="btn btn-dark">Eraser</button>
+        <button type="button" onclick = "resetGrid(); customGrid();" id="clearBtn" class="btn btn-dark" >Clear</button>
+        <p id="label">Size : </p>
+        <input id = "sliderBar" class="form-range" type="range" min="1" value ="3" max = "64" oninput ="resetGrid();  customGrid();"/>
+        
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
